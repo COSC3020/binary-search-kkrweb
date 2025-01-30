@@ -6,17 +6,18 @@
 
 function binarySearch(list, element) 
 {
-    
     //assumed sorted list
     var arrLen = list.length;
-    var midPos = Math.floor(arrLen / 2);
-    var midVal = list[midPos];
 
-    if(arrLen == 0)
+        if(arrLen == 0)
     {
         return -1;
     }
     
+    var midPos = Math.floor(arrLen / 2);
+    var midVal = list[midPos];
+
+
     if (midVal == element) 
     {
         return midPos;
