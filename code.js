@@ -7,31 +7,5 @@
 
 function binarySearch(list, element) 
 {
-    //assumed sorted list
-    var arrLen = list.length;
-
-    if (arrLen == 0)
-    {
-        return -1; 
-    }
-
-    var midPos = Math.floor(arrLen / 2);
-    var midVal = list[midPos];
-
-    if (midVal == element) 
-    {
-        return midPos; 
-    } 
-    
-    if (element > midVal) 
-    {
-        var result = binarySearch(list.slice(midPos + 1), element);
-        if (result == -1) 
-        {
-            return -1; 
-        } 
-        return midPos + 1 + result; 
-    } 
-    
-    return binarySearch(list.slice(0, midPos), element);
+    //nuking this again. Why I ever tried to do this recursively is beyond me
 }
