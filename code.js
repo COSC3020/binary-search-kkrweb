@@ -17,7 +17,7 @@ function binarySearch(list, element)
         return -1;
     }
     
-   while(frontPos <= endPos && ((centerPos >= frontPos) && (centerPos <= endPos)))
+   while(frontPos <= endPos)// && ((centerPos >= frontPos) && (centerPos <= endPos)))
     {
         centerPos = Math.floor((frontPos + endPos) / 2);
         if(list[centerPos] == element)
