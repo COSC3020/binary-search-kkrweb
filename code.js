@@ -11,15 +11,21 @@ function binarySearch(list, element)
     var frontPos = 0;
     var endPos = list.length - 1;
     var centerPos;
+    
     if(list.length == 0)
     {
         return -1;
     }
+    
     centerPos = Math.floor(endPos / 2);
     while(frontPos <= endPos && ((centerPos >= frontPos) && (centerPos <= endPos)))
         {
             if(list[centerPos] == element)
             {
+                while(centerPos > 0 && (list[centerPos - 1] == element))
+            {
+                centerPos--;
+            }
                 return centerPos;
             }
             else if(element > list[centerPos])
