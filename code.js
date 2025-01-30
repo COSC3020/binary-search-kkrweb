@@ -8,12 +8,12 @@ function binarySearch(list, element)
 {
 //assumed sorted array input
 
-    startIndex = 0;
-    endIndex = list.length-1;
+    var startIndex = 0;
+    var endIndex = list.length-1;
 
     while (startIndex <= endIndex) 
         {
-        midIndex = Math.floor((startIndex + endIndex)/ 2);
+        var midIndex = Math.floor((startIndex + endIndex)/ 2);
         if(list[midIndex] == element) 
         {
             return midIndex; //if equal, return index
