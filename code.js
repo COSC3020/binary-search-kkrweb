@@ -7,6 +7,7 @@
 
 function binarySearch(list, element) 
 {
+    //nuked this twice because I tried to do it recursively
     var frontPos = 0;
     var endPos = list.length - 1;
     var centerPos;
@@ -16,7 +17,7 @@ function binarySearch(list, element)
         return -1;
     }
     
-    while(frontPos <= endPos)
+   while(frontPos <= endPos && ((centerPos >= frontPos) && (centerPos <= endPos)))
     {
         centerPos = Math.floor((frontPos + endPos) / 2);
         if(list[centerPos] == element)
