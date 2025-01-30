@@ -16,3 +16,6 @@ I was curious regarding increment and decrement behaviors in JS,
 and though it proved to be largely irrelevant in implementation of this exercise I did learn a little ha
 [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Decrement](url)
 [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment](url)
+
+Also looked into this because I had no idea as to the difference between var and let, if they were the same or not, and when to or not to use either if at all.
+[https://www.geeksforgeeks.org/difference-between-var-and-let-in-javascript/](url)
