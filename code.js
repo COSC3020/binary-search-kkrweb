@@ -3,12 +3,14 @@
 // Binary Search Exercise
 // 29 January 2025
 //
+
+
 function binarySearch(list, element) 
 {
     //assumed sorted list
     var arrLen = list.length;
 
-    if (arrLen == 0) 
+    if (arrLen == 0)
     {
         return -1; 
     }
@@ -18,18 +20,18 @@ function binarySearch(list, element)
 
     if (midVal == element) 
     {
-        return midPos; //found, returns index of match
-    }
-
-    if (element > midVal)
+        return midPos; 
+    } 
+    
+    if (element > midVal) 
     {
         var result = binarySearch(list.slice(midPos + 1), element);
-        if (result == -1)
+        if (result == -1) 
         {
-            return -1; //element not found
-        }
-        return midPos + 1 + result; // Adjust index to account for slicing
-    }
-
+            return -1; 
+        } 
+        return midPos + 1 + result; 
+    } 
+    
     return binarySearch(list.slice(0, midPos), element);
 }
