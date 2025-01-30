@@ -9,9 +9,9 @@ function binarySearch(list, element)
 //assumed sorted array input
 
     startIndex = 0;
-    endIndex = list.length;
+    endIndex = list.length-1;
 
-    while (startIndex <= endIndex-1) 
+    while (startIndex <= endIndex) 
         {
         midIndex = Math.floor((startIndex + endIndex)/ 2);
         if(list[midIndex] == element) 
