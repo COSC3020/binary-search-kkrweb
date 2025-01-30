@@ -6,30 +6,28 @@
 
 function binarySearch(list, element) 
 {
-    //assumed sorted array input
+    //assumed sorted list
     var arrLen = list.length;
-    var midPos = Math.floor(arrLen/2);
-    if(list[midPos] == element)
+    var midPos = Math.floor(arrLen / 2);
+    var midVal = list[midPos];
+
+    if (midVal == element) 
     {
         return midPos;
-    }
-    else if(element > list[midPos])
+    } 
+    
+    if (element > midVal) 
     {
-        var result = binarySearch(list.slice(midPos+1), element);
-        if (result >= 0)
+        var result = binarySearch(list.slice(midPos + 1), element);
+        if (result >= 0) 
         {
             return result + midPos + 1;
-        }
+        } 
         else
         {
-            return -1;
+            return -1; //not found
         }
-    }
-    else if(element < list[midPos])
-    {
-        return binarySearch(list.slice(0, midPos), element);
-    }
-    //all fails
-    return -1;
+    } 
+    
+    return binarySearch(list.slice(0, midPos), element);
 }
-
