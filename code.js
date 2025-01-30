@@ -9,23 +9,22 @@ function binarySearch(list, element)
 //assumed sorted array input
 
     startIndex = 0;
-    len = list.length();
-    endIndex = list.length()--;
+    endIndex = list.length;
 
-    while (startIndex <= len) 
+    while (startIndex <= endIndex-1) 
         {
-        midIndex = Math.floor((startIndex + len)/ 2);
+        midIndex = Math.floor((startIndex + endIndex)/ 2);
         if(list[midIndex] == element) 
         {
             return midIndex; //if equal, return index
         } 
         else if(element > list[midIndex]) 
         {
-            startIndex = midIndex++; //focus on right side of sorted list, larger
+            startIndex = midIndex+1; //focus on right side of sorted list, larger
         } 
         else 
         {
-            endIndex = midIndex--; //focus on left side of sorted list, smaller values
+            endIndex = midIndex-1; //focus on left side of sorted list, smaller values
         }
     }
     
