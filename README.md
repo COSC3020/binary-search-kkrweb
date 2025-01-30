@@ -11,7 +11,7 @@ I certify that I have listed all sources used to complete this exercise, includi
 
 //
 
-Citations:(will be properly formatted prior to submitting for feedback)
+Citations:
 I was curious regarding increment and decrement behaviors in JS, 
 and though it proved to be largely irrelevant in implementation of this exercise I did learn a little ha
 [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Decrement](url)
@@ -19,3 +19,11 @@ and though it proved to be largely irrelevant in implementation of this exercise
 
 Also looked into this because I had no idea as to the difference between var and let, if they were the same or not, and when to or not to use either if at all.
 [https://www.geeksforgeeks.org/difference-between-var-and-let-in-javascript/](url)
+
+//
+
+“Increment (++) - JavaScript | MDN.” Developer.mozilla.org, 15 Aug. 2023, developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment.
+
+"Decrement (--) - JavaScript | MDN.” Developer.mozilla.org, 15 Aug. 2023, developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Decrement.
+
+GeeksforGeeks. “Difference between Var and Let in JavaScript.” GeeksforGeeks, GeeksforGeeks, 10 July 2018, www.geeksforgeeks.org/difference-between-var-and-let-in-javascript/.
